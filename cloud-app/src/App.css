@@ -1,0 +1,154 @@
+.welcome-page {
+  width: 100%;
+  height: 1080px;
+  background: url('./images/pink-cloud.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  
+  overflow: hidden;
+}
+.index_title {
+  width: 990px;
+  position: relative;
+  top: 260px;
+  left: 465px;
+  font-size: 80px;
+  color: white;
+  font-family: 'Rubik';
+  opacity: 1;
+  text-align: center;
+  clear: both;
+}
+
+.visitor_dashboard {
+  width: 800px;
+  color: rgb(165, 214, 224);
+  position: relative;
+  top: 250px;
+  left: 690px;
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 300;
+  font-size: 33px;
+  opacity: 1;
+  clear: both;
+}
+
+
+
+.main_nav {
+  opacity: 1;
+  width: 1664px;
+  height: 89px;
+  position: absolute;
+  left: 128px;
+  top: 840px;
+  display:block
+}
+
+
+.other_nav {
+  opacity: 1;
+  width: 1664px;
+  height: 89px;
+  position: absolute;
+  left: 128px;
+  top: 345px;
+  display: block;
+}
+
+
+.nav_link {
+  background-color: transparent;
+  color: white;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Rubik', sans-serif; 
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 0;
+  list-style: none;
+}
+
+
+.link {
+  transition-duration: 0.4s;
+  border-color: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.link:hover{
+  background-color: rgb(176, 191, 214);
+}
+
+#resume { 
+	overflow: auto;
+	opacity:1;
+	width:1920px;
+	height:1080px;
+  position:absolute;
+  background-color: rgb(242, 234, 221);
+}
+#resume-title-box { 
+	opacity:1;
+	border:1px solid rgba(0, 0, 0, 1);
+	width:1920px;
+	height:428px;
+	position:relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+	background-repeat:no-repeat;
+  background-size:cover;
+  background-image: url(./images/Frame\ 1.jpg);
+}
+#resume-title { 
+	color:rgb(0, 0, 0);
+	opacity:1;
+	width:1009px;
+	height:208px;
+	font-family:'Rubik', sans-serif; 
+	text-align:left;
+	font-size:60px;
+	letter-spacing:0;
+  line-height:undefined;
+}
+
+.collapsibleBT {
+  background-color: rgb(37, 39, 146);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Roboto Mono';
+  
+}
+
+.active, .collapsibleBT:hover {
+  background-color: rgb(57, 6, 138);
+}
+
+#resume-collapse {
+  clear: both;
+  position:relative;
+}
+
+.collapsible-content {
+  font-family: 'Roboto Mono';
+  font-size: 17px;
+  padding: 26px;
+  margin: 12px;
+  text-align: left;
+}
+
+
+

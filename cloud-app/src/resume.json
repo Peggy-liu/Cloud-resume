@@ -1,0 +1,14 @@
+{
+    "education" : "2017 — 2019(December) Swinburne University of Technology Bachelor Of Computer Science (Software Developement)" ,
+
+    "cert": "Oracle Certified Associate Java SE 8 Programmer (August 2020)",
+    "skills" : [
+        {"backend" : [
+            "Spring Boot Application",
+            "RESTful-API development using Spring Boot" ,
+            "Spring security including JWT, OAuth2, OpenID, and Keycloak, with extra transport layer security SSL",
+            "Testing: Unit testing and Integration testing in Java using Junit and Mockito.",
+            "C++: Basic knowledge for C++, have developed final year project in C++."
+        ]}
+    ]
+}
