@@ -1,0 +1,148 @@
+type visitorCount {
+  id: ID!
+  count: Int!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelvisitorCountConnection {
+  items: [visitorCount]
+  nextToken: String
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+input ModelvisitorCountFilterInput {
+  id: ModelIDInput
+  count: ModelIntInput
+  and: [ModelvisitorCountFilterInput]
+  or: [ModelvisitorCountFilterInput]
+  not: ModelvisitorCountFilterInput
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+type Query {
+  getVisitorCount(id: ID!): visitorCount
+  listVisitorCounts(filter: ModelvisitorCountFilterInput, limit: Int, nextToken: String): ModelvisitorCountConnection
+}
+
+input CreateVisitorCountInput {
+  id: ID
+  count: Int!
+}
+
+input UpdateVisitorCountInput {
+  id: ID!
+  count: Int
+}
+
+input DeleteVisitorCountInput {
+  id: ID
+}
+
+type Mutation {
+  createVisitorCount(input: CreateVisitorCountInput!, condition: ModelvisitorCountConditionInput): visitorCount
+  updateVisitorCount(input: UpdateVisitorCountInput!, condition: ModelvisitorCountConditionInput): visitorCount
+  deleteVisitorCount(input: DeleteVisitorCountInput!, condition: ModelvisitorCountConditionInput): visitorCount
+}
+
+input ModelvisitorCountConditionInput {
+  count: ModelIntInput
+  and: [ModelvisitorCountConditionInput]
+  or: [ModelvisitorCountConditionInput]
+  not: ModelvisitorCountConditionInput
+}
+
+type Subscription {
+  onCreateVisitorCount: visitorCount @aws_subscribe(mutations: ["createVisitorCount"])
+  onUpdateVisitorCount: visitorCount @aws_subscribe(mutations: ["updateVisitorCount"])
+  onDeleteVisitorCount: visitorCount @aws_subscribe(mutations: ["deleteVisitorCount"])
+}
