@@ -1,0 +1,4 @@
+type visitorCount @model {
+  id: ID!
+  count: Int!
+}
