@@ -12,10 +12,10 @@ Amplify.configure(awsExports);
 function Welcome(){
     const [visitors, setVisitors] = useState(0)
 
-    
-    useEffect(() => {
-      fetchAndUpdateVisitors()
-    }, [])
+    //Uncommon this in production!!!
+    // useEffect(() => {
+    //   fetchAndUpdateVisitors()
+    // }, [])
   
     async function fetchAndUpdateVisitors () {
       try {

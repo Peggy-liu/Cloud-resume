@@ -1,14 +1,78 @@
 {
-    "education" : "2017 — 2019(December) Swinburne University of Technology Bachelor Of Computer Science (Software Developement)" ,
-
+    "education": "2017 — 2019(December) Swinburne University of Technology Bachelor Of Computer Science (Software Developement)",
     "cert": "Oracle Certified Associate Java SE 8 Programmer (August 2020)",
-    "skills" : [
-        {"backend" : [
-            "Spring Boot Application",
-            "RESTful-API development using Spring Boot" ,
-            "Spring security including JWT, OAuth2, OpenID, and Keycloak, with extra transport layer security SSL",
-            "Testing: Unit testing and Integration testing in Java using Junit and Mockito.",
-            "C++: Basic knowledge for C++, have developed final year project in C++."
-        ]}
+    "skills": [
+        {
+            "Microservices": [
+                "Solid knowledge in creating microservices using Spring Boot, Spring Cloud Netflix",
+                "Spring security including JWT, OAuth2, OpenID, and Keycloak, with extra transport layer security SSL",
+                "Testing: Unit testing and Integration testing in Java using Junit and Mockito.",
+                " Microservices using Spring Boot, Spring Cloud Netflix; Architecture, Design Pattern, Configuration, Monitoring, Fault tolerance, Testing and Deployment.",
+                "Basic knowledge about various Microservice design pattern; experience in buildling microservices with CQRS and event sourcing using Axon frameworks and RabbitMq.",
+                "Docker & Docker-Compose: Use of docker for application containerisation",
+                "Testing: Unit testing and Integration testing in Java using Junit and Mockito."
+            ]
+        },
+        {
+            "API Development": [
+                "Understand OpenAPI specification and able to develop RestAPI complied with OpenAPI spec using Swagger",
+                "Understand the basics for RestAPI, and have solid knowledge about buidling Rest using Spring Boot ",
+                "Understand and know the application of different types of security implementation for securing an API",
+                "Basic knowledge about GraphQL API, using it to build part of the solution for this website",
+                "Understand the difference between HTTP API call and messaging; experience in implementing microservices design pattern such as Event sourcing and CQRS using RabbitMQ and Spring Axon Framework "
+            ]
+        },
+        {
+            "cloud AWS-Focused": [
+                "Infrasturcture managent(Infrastucture As Code): AWS Infrastructure provision using Terraform such as AWS virtual network provisioning and management",
+                "Provisioning and Management of EC2, solid knowledge about EC2 component and operation such as image, volumn, Elastic block storage; basic understanding about building a fault tolerence and resillience infrasturcture using Auto Scailing Group and Elastic Load Balancer; able to write basic Shell script to automate process on EC2 machine",
+                "S3, RDS, DynamoDB, EFS , EBS : able to identify the use case and integrate various AWS storage solution with other AWS services and applications",
+                "Route 53, CloudFront: understand basics about differnt routing record types such as CName and Alias, and also the different routing strategy provided by Route53. I have registered my own DNS namespace used by this website. Understand basics about Content Delivery Network and also able to integrate Cloudfront into the application",
+                "APIGateway, AppSync: Development of Rest API and GraphQL API using API Gateway and AppSync",
+                "Solid understanding of IAM and able to perform various administrative actions such as creating new IAM roles and assign roles to other AWS services",
+                "Serverless Architecture: solid knowledge about AWS Lambda, experience in using AWS SAM CLI to create a serverless backend integrated with APIGateways and Databases",
+                "AWS Amplify: understand the various component of this service, able to comply with CI/CD throughout the life cycle of development of this application. AWS Amplify is used for developing the entire stack of this web application",
+                "Solid understanding of AWS Virtual Network, able to provision network components using Terraform and manage the communication between different networks using route table and understand the usage of NAT gateway and Internet gateway; able to implement network security using Security Groups and NACLs"
+            ]
+        },
+        {
+            "C++": "Basic knowledge for C++, have developed final year project in C++."
+        },
+        {
+            "Web Development": "React framework is used for the front-end of this web app; javascript is also used for the serverless function. The design of this web app uses HTML, CSS, with the help of tool such as Figma"
+        },
+        {
+            "database": "Experience in using various database for backend architecture. Such as MySQL, Amazon DynamoDB, Amazon RDS and Neo4j. "
+        },
+        {
+            "ioT": "Experience in making a smart parking system prototype using Arduino, using NodeJS with Express framework to build a local web server. A MySQL database was used to store the data that received from the Arduino. A webpage is used to serve information from the database and from external APIs, such as Google API. "
+        },
+        {
+            "agile": "Consistently involved in Sprint in all project works at school throughout my study."
+        }
+    ],
+    "project": "“Federated Autonomous Vehicle Testbed (Stage 2)” for Australia Department Of Defence And technology \n As a software developer for the team, using C++ and Unreal Engine blueprint to complete a project for Australia Department Of Defence And technology, named “Federated Autonomous Vehicle Testbed (Stage 2)”, which aimed to implement the simulated behaviour of an un-crewed jackal(AI controller) based on different scenarios. ",
+    "objective": "My Objective is to become a Cloud Native Engineer.",
+    "hospitality": [
+        {
+            "2015-2019": [
+                "Front House Supervisor\n SushiHub, Melbourne City",
+                "Responsibilities: provide training for new staff; provide overall satisfying experience for customers; maintain good communication between staff; handle customer enquiries and complaints."
+            ]
+        },
+        {
+            "2020-current": "Food and Beverage Front house staff at Sunda EXP, Hotel Windsor, Melbourne City"
+        }
+    ],
+    "me": [
+        {
+            "Communication": "Through the customer service employment I gain the experience of how to communicate with all sorts of different people, and how to solve problems and conflicts using communication and interpersonal skills. "
+        },
+        {
+            "Problem Solving": "An individual and fast learner, tent to try out the problems on my own before turning to others for help to ensure I avoid troubling others by asking stupid questions. "
+        },
+        {
+            "Team Construction": "An enthusiastic team member, hate leaving behind by the team. Involve in group discussion all the time(no matter what the content is). Consistent update on the work to the team, asking for group opinions. Team goal is the top priority. Last but not least, I welcome any kind of advises and comments to help me figure out the space for improvement. I also love a challenging and innovative environment which keeps me thinking and working hard. "
+        }
     ]
 }
