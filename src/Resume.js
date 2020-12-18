@@ -83,7 +83,8 @@ function convert (item) {
           </div>
         )
       })
-      return result.fill((<h3>{key.toUpperCase()}</h3>), 0,1);
+       result.unshift((<h3>{key.toUpperCase()}</h3>));
+       return result;
     } else {
       return (
         <div>
