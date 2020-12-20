@@ -10,9 +10,9 @@ function Nav (props) {
        <ul className='nav_link'>
          <Link to='/' className='link'><li>HOME</li></Link>
          <Link to='/resume' className='link'><li>CLOUD RESUME</li></Link>
-         <Link to='/' className='link'><li>POST</li></Link>
+         <Link to='/post' className='link'><li>POST</li></Link>
          <Link to='/' className='link'><li >CONTACT ME</li></Link>
-         <Link to='/' className='link'><li >ART GALLERY</li></Link>
+         <Link to='/gallery' className='link'><li >ART GALLERY</li></Link>
        </ul>
       </nav>
     </div>

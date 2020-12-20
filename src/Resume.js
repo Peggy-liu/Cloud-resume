@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import Nav from './Nav'
+import Theme from './Theme'
+
 
 function Resume () {
   const [resume, setResume] = useState({})
@@ -16,7 +17,7 @@ function Resume () {
 
   return (
     <div id='resume'>
-      <Theme />
+      <Theme titleBoxStyle='resume-title-box' titleStyle='resume-title'  titleValue='RESUME ON THE CLOUD, ACCESS ANYWHERE, WHENEVER YOU NEED'/>
       <Collapsible title='EDUCATION' content={resume.education} />
       <Collapsible title='CERTIFICATION' content={resume.cert} />
       <Collapsible title='SKILLS' content={resume.skills} />
@@ -98,15 +99,5 @@ function convert (item) {
   }
 }
 
-const Theme = () => {
-  return (
-    <div id='resume-title-box'>
-      <span id='resume-title'>
-        RESUME ON THE CLOUD, ACCESS ANYWHERE, WHENEVER YOU NEED
-      </span>
-      <Nav type='other' />
-    </div>
-  )
-}
 
 export default Resume

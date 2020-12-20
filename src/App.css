@@ -1,7 +1,7 @@
 .welcome-page {
   width: 100%;
   height: 1080px;
-  background: url('./images/pink-cloud.png');
+  background: url('./images/pinkcloud.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10,7 +10,7 @@
   
   overflow: hidden;
 }
-.index_title {
+.welcome_title {
   width: 990px;
   position: relative;
   top: 260px;
@@ -150,5 +150,76 @@
   text-align: left;
 }
 
+#gallery { 
+	overflow: auto;
+	opacity:1;
+	width:1920px;
+	height:1080px;
+  position:absolute;
+  background-color: rgb(242, 234, 221);
+}
+#gallery-title-box { 
+	opacity:1;
+	width:1920px;
+	height:428px;
+	position:relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+	background-repeat:inherit;
+  background-size:cover;
+  background-image: url(./images/gallery.png);
+}
+#gallery-title { 
+	color:rgba(201, 195, 110, 0.76);
+	opacity:1;
+	width:1009px;
+	height:208px;
+	font-family:'Rubik', sans-serif; 
+	text-align:left;
+	font-size:60px;
+	letter-spacing:0;
+  line-height:undefined;
+}
 
 
+.introBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 60px;
+}
+
+.intro {
+  font-family: 'Roboto Mono';
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  color: rgb(95, 128, 6);
+}
+
+
+.photoCredit {
+  font-size: 13px;
+  color: rgb(184, 180, 180);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 0%;
+  position: relative;
+}
+
+.photo {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  align-self: center;
+}
