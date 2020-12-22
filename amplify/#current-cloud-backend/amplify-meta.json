@@ -35,8 +35,56 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apivisitorCount"
       },
-      "lastPushTimeStamp": "2020-12-13T15:53:12.379Z",
-      "lastPushDirHash": "rEwAy9n3GLTUcPAmGGp4EU9DxaE="
+      "lastPushTimeStamp": "2020-12-22T16:39:20.861Z",
+      "lastPushDirHash": "+xnVMpWSkInkixZXYZ5vWY/LSwA="
+    },
+    "SesApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "sendEmail",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/api/SesApi-cloudformation-template.json",
+        "logicalId": "apiSesApi"
+      },
+      "lastPushTimeStamp": "2020-12-22T16:39:18.341Z",
+      "output": {
+        "ApiName": "SesApi",
+        "RootUrl": "https://xronsxbupa.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "xronsxbupa"
+      },
+      "lastPushDirHash": "rnQomlnxQhIU7JNfeFXqRoD71kM="
+    }
+  },
+  "function": {
+    "sendEmail": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2020-12-22T16:37:44.501Z",
+      "lastPackageTimeStamp": "2020-12-22T16:37:44.557Z",
+      "distZipFilename": "sendEmail-6645642b306d4e683141-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/function/sendEmail-cloudformation-template.json",
+        "logicalId": "functionsendEmail"
+      },
+      "lastPushTimeStamp": "2020-12-22T16:39:20.861Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:467515275359:function:sendEmail-dev",
+        "Name": "sendEmail-dev",
+        "LambdaExecutionRole": "cloudresumeLambdaRole7828df38-dev"
+      },
+      "lastPushDirHash": "mdGjExq8SJ3Cvj+GIIBmJcTdiA0="
     }
   }
 }

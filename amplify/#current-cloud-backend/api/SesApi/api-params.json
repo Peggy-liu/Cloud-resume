@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/email",
+            "lambdaFunction": "sendEmail",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/email"
+        }
+    ],
+    "resourceName": "SesApi",
+    "apiName": "SesApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "sendEmail"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-cloudapp-dev-15952-authRole",
+        "unAuthRoleName": "amplify-cloudapp-dev-15952-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "sendEmail",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

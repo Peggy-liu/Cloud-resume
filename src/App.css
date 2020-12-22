@@ -7,7 +7,7 @@
   background-size: cover;
   opacity: 1;
   position: relative;
-  
+
   overflow: hidden;
 }
 .welcome_title {
@@ -29,14 +29,12 @@
   position: relative;
   top: 250px;
   left: 690px;
-  font-family: 'Rubik', sans-serif; 
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 33px;
   opacity: 1;
   clear: both;
 }
-
-
 
 .main_nav {
   opacity: 1;
@@ -45,9 +43,8 @@
   position: absolute;
   left: 128px;
   top: 840px;
-  display:block
+  display: block;
 }
-
 
 .other_nav {
   opacity: 1;
@@ -59,7 +56,6 @@
   display: block;
 }
 
-
 .nav_link {
   background-color: transparent;
   color: white;
@@ -67,13 +63,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Rubik', sans-serif; 
+  font-family: 'Rubik', sans-serif;
   text-align: left;
   font-size: 30px;
   letter-spacing: 0;
   list-style: none;
 }
-
 
 .link {
   transition-duration: 0.4s;
@@ -82,41 +77,41 @@
   color: white;
 }
 
-.link:hover{
+.link:hover {
   background-color: rgb(176, 191, 214);
 }
 
-#resume { 
-	overflow: auto;
-	opacity:1;
-	width:1920px;
-	height:1080px;
-  position:absolute;
+#resume {
+  overflow: auto;
+  opacity: 1;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
   background-color: rgb(242, 234, 221);
 }
-#resume-title-box { 
-	opacity:1;
-	border:1px solid rgba(0, 0, 0, 1);
-	width:1920px;
-	height:428px;
-	position:relative;
+#resume-title-box {
+  opacity: 1;
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 1920px;
+  height: 428px;
+  position: relative;
   align-items: center;
   justify-content: center;
   display: flex;
-	background-repeat:no-repeat;
-  background-size:cover;
-  background-image: url(./images/Frame\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/frame.jpg);
 }
-#resume-title { 
-	color:rgb(0, 0, 0);
-	opacity:1;
-	width:1009px;
-	height:208px;
-	font-family:'Rubik', sans-serif; 
-	text-align:left;
-	font-size:60px;
-	letter-spacing:0;
-  line-height:undefined;
+#resume-title {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  width: 1009px;
+  height: 208px;
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: undefined;
 }
 
 .collapsibleBT {
@@ -130,16 +125,16 @@
   outline: none;
   font-size: 18px;
   font-family: 'Roboto Mono';
-  
 }
 
-.active, .collapsibleBT:hover {
+.active,
+.collapsibleBT:hover {
   background-color: rgb(57, 6, 138);
 }
 
 #resume-collapse {
   clear: both;
-  position:relative;
+  position: relative;
 }
 
 .collapsible-content {
@@ -150,38 +145,37 @@
   text-align: left;
 }
 
-#gallery { 
-	overflow: auto;
-	opacity:1;
-	width:1920px;
-	height:1080px;
-  position:absolute;
+#gallery {
+  overflow: auto;
+  opacity: 1;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
   background-color: rgb(242, 234, 221);
 }
-#gallery-title-box { 
-	opacity:1;
-	width:1920px;
-	height:428px;
-	position:relative;
+#gallery-title-box {
+  opacity: 1;
+  width: 1920px;
+  height: 428px;
+  position: relative;
   align-items: center;
   justify-content: center;
   display: flex;
-	background-repeat:inherit;
-  background-size:cover;
+  background-repeat: inherit;
+  background-size: cover;
   background-image: url(./images/gallery.png);
 }
-#gallery-title { 
-	color:rgba(201, 195, 110, 0.76);
-	opacity:1;
-	width:1009px;
-	height:208px;
-	font-family:'Rubik', sans-serif; 
-	text-align:left;
-	font-size:60px;
-	letter-spacing:0;
-  line-height:undefined;
+#gallery-title {
+  color: rgba(201, 195, 110, 0.76);
+  opacity: 1;
+  width: 1009px;
+  height: 208px;
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: undefined;
 }
-
 
 .introBox {
   display: flex;
@@ -202,7 +196,6 @@
   color: rgb(95, 128, 6);
 }
 
-
 .photoCredit {
   font-size: 13px;
   color: rgb(184, 180, 180);
@@ -222,4 +215,61 @@
 
 img {
   align-self: center;
+}
+
+#contact {
+  overflow: auto;
+  opacity: 1;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  background-color: rgb(166, 186, 218);
+}
+
+#contact-title-box {
+  opacity: 1;
+  width: 1920px;
+  height: 428px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-repeat: round;
+  background-size: cover;
+  background-image: url(./images/no108.png);
+}
+
+#contact-title {
+  color: rgba(255, 255, 255, 0.76);
+  opacity: 1;
+  width: 1009px;
+  height: 208px;
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: undefined;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px;
+  align-content: flex-start;
+}
+
+.contact-line-item {
+  font-family: 'Roboto Mono';
+  font-size: 17px;
+}
+
+.contact-header{
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+}
+
+form{
+  font-family: 'Roboto Mono';
+  font-size: 18px;
 }

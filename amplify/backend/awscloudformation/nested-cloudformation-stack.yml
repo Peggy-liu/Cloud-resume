@@ -78,7 +78,43 @@
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
           "S3DeploymentBucket": "amplify-cloudapp-dev-15952-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/33403038785baadbca41b3b931ddd1f494dee3c6",
+          "S3DeploymentRootKey": "amplify-appsync-files/9617298a986755f892daeccc52561b3b3ef08eeb",
+          "env": "dev"
+        }
+      }
+    },
+    "apiSesApi": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/api/SesApi-cloudformation-template.json",
+        "Parameters": {
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "functionsendEmailName": {
+            "Fn::GetAtt": [
+              "functionsendEmail",
+              "Outputs.Name"
+            ]
+          },
+          "functionsendEmailArn": {
+            "Fn::GetAtt": [
+              "functionsendEmail",
+              "Outputs.Arn"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
+    "functionsendEmail": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/function/sendEmail-cloudformation-template.json",
+        "Parameters": {
           "env": "dev"
         }
       }

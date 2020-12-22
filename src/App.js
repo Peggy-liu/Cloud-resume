@@ -6,8 +6,10 @@ import Welcome from "./Welcome"
 import Post from "./Post"
 import Gallery from "./Gallery"
 import Contact from './Contact'
+import Amplify, { API } from 'aws-amplify';
+import awsconfig from './aws-exports';
 
-
+Amplify.configure(awsconfig);
 
 function App () {
   
@@ -19,7 +21,7 @@ function App () {
       <Route path='/resume'  component={Resume} />
       {/* <Route path='/post'  component={Post} /> */}
       <Route path='/gallery'  component={Gallery} />
-      {/* <Route path='/contact'  component={Contact} /> */}
+      <Route path='/contact'  component={Contact} />
       </Switch>
     </Router>
   )

@@ -22,6 +22,8 @@ export const updateVisitorCount = /* GraphQL */ `
     updateVisitorCount(input: $input, condition: $condition) {
       id
       count
+      createdAt
+      updatedAt
     }
   }
 `;

@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import Nav from './Nav'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
-import awsExports from './aws-exports'
+import awsconfig from './aws-exports'
 import { updateVisitorCount } from './graphql/mutations'
 import { getVisitorCount } from './graphql/queries'
 
 
-Amplify.configure(awsExports);
+Amplify.configure(awsconfig);
 
 function Welcome(){
     const [visitors, setVisitors] = useState(0)
 
     //Uncommon this in production!!!
-    // useEffect(() => {
-    //   fetchAndUpdateVisitors()
-    // }, [])
+    useEffect(() => {
+      fetchAndUpdateVisitors()
+    }, [])
   
     async function fetchAndUpdateVisitors () {
       try {
