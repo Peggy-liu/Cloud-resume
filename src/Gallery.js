@@ -6,6 +6,7 @@ import pinkcloud from './images/pinkcloud.png'
 import no108 from './images/no108.png'
 import no111 from './images/no111.png'
 import no91 from './images/no91.png'
+import Photo from './Photo'
 
 const Gallery = () => {
   return (
@@ -45,14 +46,7 @@ const Gallery = () => {
   )
 }
 
-const Photo = props => {
-  return (
-    <div className='photo'>
-      <img src={props.src} alt={props.name}></img>
-      <p className='photoCredit'>Credit: {props.credit}</p>
-    </div>
-  )
-}
+
 
 const Intro = () => {
   return (

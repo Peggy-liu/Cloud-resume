@@ -148,3 +148,13 @@
 2020-12-22T16:39:24.957Z|info : amplify-provider-awscloudformation.aws-s3.uploadFile.s3.putObject([{"Key":"[***]ify-[***]json","Bucket":"[***]ify-[***]dapp-[***]ev-[***]52-[***]ment"}])
 2020-12-22T16:39:26.436Z|info : amplify-provider-awscloudformation.amplify-service-manager.s3.uploadFile([{"Key":"[***]end-[***].json"}])
 2020-12-22T16:39:26.437Z|info : amplify-provider-awscloudformation.aws-s3.uploadFile.s3.putObject([{"Key":"[***]end-[***].json","Bucket":"[***]ify-[***]dapp-[***]ev-[***]52-[***]ment"}])
+2020-12-22T16:48:00.965Z|info : amplify status core  
+2020-12-22T16:52:35.922Z|info : amplify env core  
+2020-12-22T16:53:04.774Z|info : amplify env core list 
+2020-12-22T16:54:40.845Z|info : amplify env core checkout main 
+2020-12-22T16:55:39.799Z|info : amplify init core  
+2020-12-22T16:56:43.304Z|info : amplify-provider-awscloudformation.amplify-service-permission-check.checkAmplifyServiceIAMPermission.amplifyClient.listApps([])
+2020-12-22T16:56:44.091Z|info : amplify-provider-awscloudformation.amplify-service-manager.init.amplifyClient.listApps([{"maxResults":25}])
+2020-12-22T16:56:44.872Z|info : amplify-provider-awscloudformation.amplify-service-manager.init.amplifyClient.getBackendEnvironment([{"appId":"[***]qdb6up","environmentName":"[***]in"}])
+2020-12-22T16:57:48.217Z|info : amplify env core add main 
+2020-12-22T16:58:06.795Z|info : amplify env core add main 

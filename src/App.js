@@ -8,6 +8,7 @@ import Gallery from "./Gallery"
 import Contact from './Contact'
 import Amplify, { API } from 'aws-amplify';
 import awsconfig from './aws-exports';
+import BlogArticle from './BlogArticle'
 
 Amplify.configure(awsconfig);
 
@@ -19,7 +20,8 @@ function App () {
       <Switch>
       <Route path='/' exact  component={Welcome} />
       <Route path='/resume'  component={Resume} />
-      {/* <Route path='/post'  component={Post} /> */}
+      <Route path='/post'  component={Post} />
+      <Route path='/blog' component={BlogArticle} />
       <Route path='/gallery'  component={Gallery} />
       <Route path='/contact'  component={Contact} />
       </Switch>

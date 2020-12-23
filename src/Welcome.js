@@ -22,7 +22,7 @@ function Welcome(){
         const response = await API.graphql(
           graphqlOperation(getVisitorCount, { id: '1' })
         )
-        console.log(response)
+        
         const num = response.data.getVisitorCount.count
         await API.graphql(
           graphqlOperation(updateVisitorCount, {
