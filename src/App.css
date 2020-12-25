@@ -343,3 +343,8 @@ a{
 pre{
   color: yellow;
 }
+
+.disclaimer{
+  font-weight: bolder;
+  font-style: italic;
+}
