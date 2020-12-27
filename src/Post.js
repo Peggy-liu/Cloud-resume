@@ -13,14 +13,15 @@ const Post = () => {
       <div id='post_cat'>
         <h2>Posts</h2>
         <ul>
-          <Link to='/blog' className='link'>
-            <li>Create a full-stack web application using AWS Amplify</li>
-          </Link>
+          <li>
+            <Link to='/post/create-amplify-app' className='link'>
+              Create a full-stack web application using AWS Amplify
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
   )
 }
-
 
 export default Post

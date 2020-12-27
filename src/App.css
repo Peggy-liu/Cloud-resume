@@ -223,7 +223,16 @@ img {
   width: 1920px;
   height: 1080px;
   position: absolute;
-  background-color: rgb(166, 186, 218);
+  background-color: rgb(130, 150, 182);
+}
+
+input {
+  font-size: 18px;
+  font-family:  'Roboto Mono';
+}
+textarea {
+  font-size: 18px;
+  font-family:  'Roboto Mono';
 }
 
 #contact-title-box {
@@ -240,7 +249,7 @@ img {
 }
 
 #contact-title {
-  color: rgb(255, 255, 255);
+  color: rgb(216, 208, 91);
   opacity: 1;
   width: 1009px;
   height: 208px;
@@ -252,28 +261,39 @@ img {
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
+  display: block;
+  padding: 40px;
   margin: 20px;
-  align-content: flex-start;
 }
 
 .contact-line-item {
   font-family: 'Roboto Mono';
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: bold;
+  color: bisque;
+  display: block;
 }
 
-.contact-header{
-  font-family: 'Roboto Mono';
-  font-size: 20px;
+.contact-header {
+  font-family: 'Rubik', sans-serif;
+  font-size: 28px;
+  color: rgb(216, 208, 91);
+  display: inline;
+  padding-right: 10px;
 }
 
-form{
+.App-logo {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+form {
   font-family: 'Roboto Mono';
   font-size: 18px;
+  font-weight: bold;
+  color: bisque;
 }
-
 
 #post {
   overflow: auto;
@@ -292,8 +312,8 @@ form{
   align-items: center;
   justify-content: center;
   display: flex;
-  background-repeat:repeat;
-  background-size:auto;
+  background-repeat: repeat;
+  background-size: auto;
   background-image: url(./images/no91.png);
 }
 
@@ -309,14 +329,15 @@ form{
   line-height: undefined;
 }
 
-
 #post_cat {
   padding: 15px;
   margin: 20px;
   color: white;
+  font-size: 20px;
+  font-family: 'Roboto Mono';
 }
 
-#article{
+#article {
   padding: 30px;
   margin-top: 70px;
   margin-left: 420px;
@@ -325,26 +346,31 @@ form{
   font-family: 'Roboto Mono';
   font-size: 20px;
   line-height: 2;
-  
 }
 
-#article_title{
- text-align: center;
- color: white;
- font-family: 'Rubik', sans-serif;
- font-size: 44px;
+#article_title {
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 44px;
 }
 
-a{
-  color:white;
+a {
+  color: white;
 }
 
-
-pre{
+pre {
   color: yellow;
 }
 
-.disclaimer{
+.disclaimer {
   font-weight: bolder;
   font-style: italic;
+}
+
+#submitBtn {
+  border-radius: 7px;
+  font-family: 'Rubik', sans-serif;
+  background-color: rgb(216, 208, 91);
+  color: rgb(116, 31, 228);
 }

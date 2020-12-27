@@ -34,10 +34,10 @@ const BlogArticle = () => {
           this can save you some times googling around for the solutions.
         </p>
         <p>
-          The idea of creating this web space is inspired by an initiative held
-          by Forrest Brazeal, a cloud resume challenge(which is overdue by the
-          end of July, 2020). Feel free to checkout this awesome challenge
-          through the link{' '}
+          The idea of creating this web space is inspired by an initiative by
+          Forrest Brazeal, a cloud resume challenge(which is overdue by the end
+          of July, 2020). Feel free to check out this awesome challenge through
+          the link{' '}
           <a
             href='https://cloudresumechallenge.dev/instructions/'
             target='_blank'
@@ -67,7 +67,7 @@ const BlogArticle = () => {
           >
             Amazon
           </a>
-          {'. '}I will not go into details about every aspects of
+          {'. '}I will not go into details about every aspects of the
           implementations. This blog post will only focus on the features
           implemented for this application. If you are interested about all the
           details, you are welcome to visit the official tutorial website listed
@@ -99,11 +99,11 @@ const BlogArticle = () => {
 
         <h2 id='archi'>ARCHITECTURE</h2>
         <p>
-          The front end of the application is build using React. And the back
+          The front end of the application is built using react. And the back
           end infrastructure is created using amplify, who under-the-hood is
           using CloudFormation to create and manage the infrastructures. In
           order to use AWS backend service in our front end, AWS provides us
-          with several libraries, and they are intalled into our react project
+          with several libraries, and they are installed into our react project
           using npm.
         </p>
         <Photo src={archi} name='amplify and react' />
@@ -113,37 +113,45 @@ const BlogArticle = () => {
           name='amplify workflow'
           credit='https://docs.amplify.aws/cli/teams/overview'
         />
-        <p>The AWS Amplify Console provides a Git-based workflow for building, deploying, and hosting your Amplify web app — both the frontend and backend — from source control.
-          You can easily connect the git-based repository of your choice to Amplify, and on each commit made to the repository, a new build will be initiated in Amplify. For the 
-          simplicity, I've only maintained two branches--main and dev, for my project. You can build several application based on the branch you connect to, and you can even connect to different 
-          backend to frontend of your choice--frontend and backend are maintained seperately in Amplify which provides us with huge flexibility. To create a new backend environment for a particular
-          branch, use Amplify CLI. 
+        <p>
+          The AWS Amplify Console provides a Git-based workflow for building,
+          deploying, and hosting your Amplify web app — both the frontend and
+          backend — from source control. You can easily connect the git-based
+          repository of your choice to Amplify, and on each commit made to the
+          repository, a new build will be initiated in Amplify. For the
+          simplicity, I've only maintained two branches--main and dev, for my
+          project. You can build several application based on the branch you
+          connect to, and you can even connect to different backend to frontend
+          of your choice--for instance, connect your frontend on main branch to
+          a dev backend. Frontend and backend are maintained seperately in
+          Amplify which provides us with huge flexibility. To create a new
+          backend environment for a particular branch, use Amplify CLI.
         </p>
         <h2 id='visitor'>IMPLEMENT A VISITOR DASHBOARD</h2>
         <p>
           The visitor dashboard is implemented on the home page to record the
           number of visitors. The visitor number is persisted in AWS DynamoDB-a
-          NoSQL database. Amplify makes it extremely intuitive and easy for us
-          to implement and integrate the whole technology stack. A GraphQL API
-          is created, as well as a GraphQL schema and a DynamoDB table. You only
-          need to provide Amplify your data schema, and all the API operations
-          and database table will be created automatically.
+          NoSQL database. Amplify makes it extremely intuitive and
+          straight-forward for us to implement and integrate the whole
+          technology stack. A GraphQL API is created, as well as a GraphQL
+          schema and a DynamoDB table. You only need to provide Amplify your
+          data schema, and all the API operations and database table will be
+          created automatically.
         </p>
         <span>Below is the data schema for the visitor dashboard.</span>
         <Photo src={schema} name='schema pic' />
         <p>
-          At the first render of the home page, visitor count will be fetched
-          from the database through the API. The value will then be updated
-          locally and remotely again through API, the new value will be rendered
-          through the updated local state value. All these operations is
-          combined into one asyncronous function and will only be invoked once
-          on the first render using 'useEffect' react hook.
+          Visitor count will be fetched from database through the API when the
+          page begins to render. The value will then be updated locally and
+          remotely again through API, the new value will be rendered through the
+          updated local state value. All these operations are combined into one
+          asyncronous function and will only be invoked once on the first render
+          using 'useEffect' react hook.
         </p>
         <p>
           One of the problems I've encountered was that I kept getting invalid
-          response from the graphql API. The reason behind this is because I
-          didn't comply to the contract given by the API. This is the wrong API
-          call made by react:
+          response from the graphql API. The reason behind this is that I didn't
+          comply to the contract given by the API. This is the wrong API call:
         </p>
         <pre>
           graphqlOperation(updateVisitorCount, {"{ id: '1', count: num + 1 }"})
@@ -158,7 +166,7 @@ const BlogArticle = () => {
           Comparing two statements above, you will notice that the input I
           passed to the first wrong statement is incomplete-- you need to insert
           the input as it is specified in the schema. The correct format is as
-          following:{' '}
+          the following:{' '}
         </p>
         <pre>
           graphqlOperation(updateVisitorCount,{' '}
@@ -169,7 +177,7 @@ const BlogArticle = () => {
           Instead of putting my CV content statically in html, I put my CV in
           json file and format them in a organised way so that I could process
           and render the content dynamically using JSX. This way if I wish to
-          update my CV content, I could do it directly in the json file without
+          update my CV content in the future, I can add content directly to the json file without
           worrying about HTML rendering of the content.{' '}
         </p>
         <h2 id='email'>IMPLEMENT EMAIL NOTIFICATION FOR CONTACT</h2>
