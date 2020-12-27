@@ -4,6 +4,9 @@ import amplify from './images/amplify.png'
 import schema from './images/schema.png'
 import contact from './images/contact.png'
 import email from './images/email.png'
+import archi from './images/archi.png'
+import { HashLink as Link } from 'react-router-hash-link'
+import workflow from './images/workflow.png'
 
 const BlogArticle = () => {
   return (
@@ -41,7 +44,8 @@ const BlogArticle = () => {
             rel='noopener noreferrer'
           >
             here
-          </a>{'. '}
+          </a>
+          {'. '}
         </p>
         <p className='disclaimer'>
           Disclaimer: This is my first attempt of designing and creating full
@@ -62,17 +66,60 @@ const BlogArticle = () => {
             rel='noopener noreferrer'
           >
             Amazon
-          </a>{'. '}
-          I will not go into details about every aspects of implementations.
-          This blog post will only focus on the features implemented for this
-          application. If you are interested about all the details, you are
-          welcome to visit the official tutorial website listed above.
+          </a>
+          {'. '}I will not go into details about every aspects of
+          implementations. This blog post will only focus on the features
+          implemented for this application. If you are interested about all the
+          details, you are welcome to visit the official tutorial website listed
+          above.
         </p>
-        <h2>Architecture</h2>
-        <p>The front end of the application is build using React. And the back end infrastructure is created using amplify, who under-the-hood is using CloudFormation to create
-          and manage the infrastructures. In order to use AWS backend service in our front end, AWS provides us with several libraries, and they are intalled into our react project using npm. 
+        <div>
+          <h3>Content</h3>
+          <ul>
+            <li>
+              {' '}
+              <Link to='/blog/#archi'>ARCHITECTURE</Link>
+            </li>
+            <li>
+              <Link to='/blog/#workflow'>WORKFLOW USING AMPLIFY</Link>
+            </li>
+            <li>
+              <Link to='/blog/#visitor'>IMPLEMENT A VISITOR DASHBOARD</Link>
+            </li>
+            <li>
+              <Link to='/blog/#cv'>PROCESS MY CV DYNAMICALLY</Link>
+            </li>
+            <li>
+              <Link to='/blog/#email'>
+                IMPLEMENT EMAIL NOTIFICATION FOR CONTACT
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <h2 id='archi'>ARCHITECTURE</h2>
+        <p>
+          The front end of the application is build using React. And the back
+          end infrastructure is created using amplify, who under-the-hood is
+          using CloudFormation to create and manage the infrastructures. In
+          order to use AWS backend service in our front end, AWS provides us
+          with several libraries, and they are intalled into our react project
+          using npm.
         </p>
-        <h2>IMPLEMENT A VISITOR DASHBOARD</h2>
+        <Photo src={archi} name='amplify and react' />
+        <h2 id='workflow'>WORKFLOW USING AMPLIFY</h2>
+        <Photo
+          src={workflow}
+          name='amplify workflow'
+          credit='https://docs.amplify.aws/cli/teams/overview'
+        />
+        <p>The AWS Amplify Console provides a Git-based workflow for building, deploying, and hosting your Amplify web app — both the frontend and backend — from source control.
+          You can easily connect the git-based repository of your choice to Amplify, and on each commit made to the repository, a new build will be initiated in Amplify. For the 
+          simplicity, I've only maintained two branches--main and dev, for my project. You can build several application based on the branch you connect to, and you can even connect to different 
+          backend to frontend of your choice--frontend and backend are maintained seperately in Amplify which provides us with huge flexibility. To create a new backend environment for a particular
+          branch, use Amplify CLI. 
+        </p>
+        <h2 id='visitor'>IMPLEMENT A VISITOR DASHBOARD</h2>
         <p>
           The visitor dashboard is implemented on the home page to record the
           number of visitors. The visitor number is persisted in AWS DynamoDB-a
@@ -83,7 +130,7 @@ const BlogArticle = () => {
           and database table will be created automatically.
         </p>
         <span>Below is the data schema for the visitor dashboard.</span>
-        <img src={schema} alt='schema pic'></img>
+        <Photo src={schema} name='schema pic' />
         <p>
           At the first render of the home page, visitor count will be fetched
           from the database through the API. The value will then be updated
@@ -117,7 +164,7 @@ const BlogArticle = () => {
           graphqlOperation(updateVisitorCount,{' '}
           {"{input : { id: '1', count: num + 1 }}"})
         </pre>
-        <h2>PROCESS MY CV DYNAMICALLY</h2>
+        <h2 id='cv'>PROCESS MY CV DYNAMICALLY</h2>
         <p>
           Instead of putting my CV content statically in html, I put my CV in
           json file and format them in a organised way so that I could process
@@ -125,7 +172,7 @@ const BlogArticle = () => {
           update my CV content, I could do it directly in the json file without
           worrying about HTML rendering of the content.{' '}
         </p>
-        <h2>IMPLEMENT EMAIL NOTIFICATION FOR CONTACT</h2>
+        <h2 id='email'>IMPLEMENT EMAIL NOTIFICATION FOR CONTACT</h2>
         <p>
           I have implemented a contact form in the 'Contact Me' page. When a
           visitor fill out the form and hit submit, it will send a post request
@@ -136,8 +183,8 @@ const BlogArticle = () => {
           will prompt a success message to the visitor with their name,
           otherwise an error message will be prompted instead.
         </p>
-        <img src={contact} alt='ses code segment'></img>
-        <img src={email} alt='email'></img>
+        <Photo src={contact} name='ses code segment' />
+        <Photo src={email} name='email' />
       </div>
     </div>
   )
