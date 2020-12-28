@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import Theme from './Theme'
-
+import resume1 from './images/resume1.pdf'
+import {AiOutlineFilePdf} from 'react-icons/ai'
 
 function Resume () {
   const [resume, setResume] = useState({})
@@ -17,7 +18,20 @@ function Resume () {
 
   return (
     <div id='resume'>
-      <Theme titleBoxStyle='resume-title-box' titleStyle='resume-title'  titleValue='RESUME ON THE CLOUD, ACCESS ANYWHERE, WHENEVER YOU NEED'/>
+      <Theme
+        titleBoxStyle='resume-title-box'
+        titleStyle='resume-title'
+        titleValue='CLOUD RESUME'
+      />
+      <div className='resume-intro'>
+        <p>My resume is served through AWS cloud services. You are welcome to browse my resume through this cloud space anytime, anywhere. <br/> PDF version of this resume is also
+          available and you can download it through the link below.
+        </p>
+      </div>
+      <AiOutlineFilePdf className='App-logo'/>
+      <a href={resume1} id='download' download='resume.pdf'>
+        Download PDF Version
+      </a>
       <Collapsible title='EDUCATION' content={resume.education} />
       <Collapsible title='CERTIFICATION' content={resume.cert} />
       <Collapsible title='SKILLS' content={resume.skills} />
@@ -75,7 +89,7 @@ function convert (item) {
   for (const [key, value] of Object.entries(item)) {
     if (Array.isArray(value)) {
       var result = value.map((element, index) => {
-        console.log(element);
+        console.log(element)
         return (
           <div>
             <ul>
@@ -84,8 +98,8 @@ function convert (item) {
           </div>
         )
       })
-       result.unshift((<h3>{key.toUpperCase()}</h3>));
-       return result;
+      result.unshift(<h3>{key.toUpperCase()}</h3>)
+      return result
     } else {
       return (
         <div>
@@ -98,6 +112,5 @@ function convert (item) {
     }
   }
 }
-
 
 export default Resume

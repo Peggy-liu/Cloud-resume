@@ -38,7 +38,7 @@ function Welcome(){
     return (
       
       <div className='welcome-page'>
-        <p className='welcome_title'>WELCOME TO MY ARTISTIC CLOUD SPACE</p>
+        <p className='welcome_title'>WELCOME TO <br/>MY CLOUD SPACE</p>
         <p className='visitor_dashboard'>
           YOU ARE VISITOR # {visitors} TO MY SITE!
         </p>

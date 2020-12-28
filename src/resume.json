@@ -16,7 +16,7 @@
         {
             "API Development": [
                 "Understand OpenAPI specification and able to develop RestAPI complied with OpenAPI spec using Swagger",
-                "Understand the basics for RestAPI, and have solid knowledge about buidling Rest using Spring Boot ",
+                "Understand the basics for RestAPI, and have solid knowledge about building Rest using Spring Boot ",
                 "Understand and know the application of different types of security implementation for securing an API",
                 "Basic knowledge about GraphQL API, using it to build part of the solution for this website",
                 "Understand the difference between HTTP API call and messaging; experience in implementing microservices design pattern such as Event sourcing and CQRS using RabbitMQ and Spring Axon Framework "
@@ -24,8 +24,8 @@
         },
         {
             "cloud AWS-Focused": [
-                "Infrasturcture managent(Infrastucture As Code): AWS Infrastructure provision using Terraform such as AWS virtual network provisioning and management",
-                "Provisioning and Management of EC2, solid knowledge about EC2 component and operation such as image, volumn, Elastic block storage; basic understanding about building a fault tolerence and resillience infrasturcture using Auto Scailing Group and Elastic Load Balancer; able to write basic Shell script to automate process on EC2 machine",
+                "Infrastructure management(Infrastructure As Code): AWS Infrastructure provision using Terraform such as AWS virtual network provisioning and management",
+                "Provisioning and Management of EC2, solid knowledge about EC2 component and operation such as image, volume, Elastic block storage; basic understanding about building a fault tolerant and resilient infrastructure using Auto Scaling Group and Elastic Load Balancer; able to write basic Shell script to automate process on EC2 machine",
                 "S3, RDS, DynamoDB, EFS , EBS : able to identify the use case and integrate various AWS storage solution with other AWS services and applications",
                 "Route 53, CloudFront: understand basics about differnt routing record types such as CName and Alias, and also the different routing strategy provided by Route53. I have registered my own DNS namespace used by this website. Understand basics about Content Delivery Network and also able to integrate Cloudfront into the application",
                 "APIGateway, AppSync: Development of Rest API and GraphQL API using API Gateway and AppSync",

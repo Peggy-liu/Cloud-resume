@@ -17,10 +17,8 @@
   left: 465px;
   font-size: 80px;
   color: white;
-  font-family: 'Rubik';
-  opacity: 1;
+  font-family: 'Rubik', sans-serif;
   text-align: center;
-  clear: both;
 }
 
 .visitor_dashboard {
@@ -28,13 +26,14 @@
   color: rgb(165, 214, 224);
   position: relative;
   top: 250px;
-  left: 690px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
+  left: 695px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  font-size: 40px;
   opacity: 1;
-  clear: both;
+  
 }
+
 
 .main_nav {
   opacity: 1;
@@ -91,7 +90,7 @@
 }
 #resume-title-box {
   opacity: 1;
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: none;
   width: 1920px;
   height: 428px;
   position: relative;
@@ -135,6 +134,16 @@
 #resume-collapse {
   clear: both;
   position: relative;
+}
+
+.resume-intro{
+  padding:20px;
+  margin-top: 30px;
+  font-family:  'Assistant', sans-serif;
+  font-size: 26px;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-style: dashed;
 }
 
 .collapsible-content {
@@ -284,8 +293,8 @@ textarea {
 
 .App-logo {
   display: inline;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 form {
@@ -373,4 +382,12 @@ pre {
   font-family: 'Rubik', sans-serif;
   background-color: rgb(216, 208, 91);
   color: rgb(116, 31, 228);
+}
+
+#download{
+  color: black;
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+  color: rgb(22, 22, 133);
+  display: inline;
 }
