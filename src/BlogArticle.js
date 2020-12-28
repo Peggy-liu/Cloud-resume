@@ -78,19 +78,19 @@ const BlogArticle = () => {
           <ul>
             <li>
               {' '}
-              <Link to='/blog/#archi'>ARCHITECTURE</Link>
+              <Link smooth to='/post/create-amplify-app/#archi'>ARCHITECTURE</Link>
             </li>
             <li>
-              <Link to='/blog/#workflow'>WORKFLOW USING AMPLIFY</Link>
+              <Link smooth to='/post/create-amplify-app/#workflow'>WORKFLOW USING AMPLIFY</Link>
             </li>
             <li>
-              <Link to='/blog/#visitor'>IMPLEMENT A VISITOR DASHBOARD</Link>
+              <Link smooth to='/post/create-amplify-app/#visitor'>IMPLEMENT A VISITOR DASHBOARD</Link>
             </li>
             <li>
-              <Link to='/blog/#cv'>PROCESS MY CV DYNAMICALLY</Link>
+              <Link smooth to='/post/create-amplify-app/#cv'>PROCESS MY CV DYNAMICALLY</Link>
             </li>
             <li>
-              <Link to='/blog/#email'>
+              <Link to='/post/create-amplify-app/#email'>
                 IMPLEMENT EMAIL NOTIFICATION FOR CONTACT
               </Link>
             </li>
