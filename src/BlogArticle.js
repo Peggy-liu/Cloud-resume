@@ -90,7 +90,7 @@ const BlogArticle = () => {
               <Link smooth to='/post/create-amplify-app/#cv'>PROCESS MY CV DYNAMICALLY</Link>
             </li>
             <li>
-              <Link to='/post/create-amplify-app/#email'>
+              <Link smooth to='/post/create-amplify-app/#email'>
                 IMPLEMENT EMAIL NOTIFICATION FOR CONTACT
               </Link>
             </li>

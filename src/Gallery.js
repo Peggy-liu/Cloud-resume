@@ -3,7 +3,6 @@ import './App.css'
 import Theme from './Theme'
 import no87 from './images/no87.png'
 import pinkcloud from './images/pinkcloud.png'
-import no108 from './images/no108.png'
 import no111 from './images/no111.png'
 import no91 from './images/no91.png'
 import Photo from './Photo'
@@ -26,11 +25,6 @@ const Gallery = () => {
         src={pinkcloud}
         alt='pinkcloud'
         credit='Ian Fisher https://www.ianfisherart.com/gallery/painting'
-      />
-      <Photo
-        src={no108}
-        alt='atmosphere 108'
-        credit='Ian Fisher https://www.robischongallery.com/artist/IAN_FISHER/works/7603'
       />
       <Photo
         src={no111}

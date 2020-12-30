@@ -232,7 +232,7 @@ img {
   width: 1920px;
   height: 1080px;
   position: absolute;
-  background-color: rgb(130, 150, 182);
+  background-color: rgb(248, 242, 218);
 }
 
 input {
@@ -254,11 +254,11 @@ textarea {
   display: flex;
   background-repeat: round;
   background-size: cover;
-  background-image: url(./images/no108.png);
+  background-image: url(./images/1.jpg);
 }
 
 #contact-title {
-  color: rgb(216, 208, 91);
+  color: rgb(170, 72, 27);
   opacity: 1;
   width: 1009px;
   height: 208px;
@@ -279,14 +279,14 @@ textarea {
   font-family: 'Roboto Mono';
   font-size: 19px;
   font-weight: bold;
-  color: bisque;
+  color: black;
   display: block;
 }
 
 .contact-header {
   font-family: 'Rubik', sans-serif;
   font-size: 28px;
-  color: rgb(216, 208, 91);
+  color: rgb(170, 72, 27);
   display: inline;
   padding-right: 10px;
 }
@@ -301,7 +301,7 @@ form {
   font-family: 'Roboto Mono';
   font-size: 18px;
   font-weight: bold;
-  color: bisque;
+  color: black;
 }
 
 #post {
@@ -380,8 +380,8 @@ pre {
 #submitBtn {
   border-radius: 7px;
   font-family: 'Rubik', sans-serif;
-  background-color: rgb(216, 208, 91);
-  color: rgb(116, 31, 228);
+  background-color: rgb(170, 72, 27);
+  color: rgb(252, 226, 188);
 }
 
 #download{
