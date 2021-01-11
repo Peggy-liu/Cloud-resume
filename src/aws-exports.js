@@ -6,7 +6,7 @@ const awsmobile = {
     "aws_appsync_graphqlEndpoint": "https://vwjrng74xbbq3ijyxikkj7fcaa.appsync-api.us-east-1.amazonaws.com/graphql",
     "aws_appsync_region": "us-east-1",
     "aws_appsync_authenticationType": "API_KEY",
-    "aws_appsync_apiKey": "da2-tayhgz23xnfbbo5cmeghn6fahe",
+    "aws_appsync_apiKey": "da2-jzaxmq6bvfdcdjycbaxj3em5ke",
     "aws_cloud_logic_custom": [
         {
             "name": "SesApi",

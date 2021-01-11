@@ -6,9 +6,9 @@
     "auditLog": "/Users/liupeiqi/Desktop/cloudresume/cloud-app/amplify/logs/.log-audit/log-audit-amplify.json",
     "files": [
         {
-            "date": 1608656286789,
-            "name": "/Users/liupeiqi/Desktop/cloudresume/amplify/logs/amplify-cli-2020-12-23.log",
-            "hash": "d390d65331bdacec3e7d69a917d47656"
+            "date": 1610344933060,
+            "name": "/Users/liupeiqi/Desktop/cloudresume/amplify/logs/amplify-cli-2021-01-11.log",
+            "hash": "b19e009d5472dfe4148efe0cabde4474"
         }
     ]
 }
