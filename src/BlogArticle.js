@@ -5,6 +5,8 @@ import schema from './images/schema.png'
 import contact from './images/contact.png'
 import email from './images/email.png'
 import archi from './images/archi.png'
+import apiErr from './images/apiErr.png'
+import configure from './images/configure.png'
 import { HashLink as Link } from 'react-router-hash-link'
 import workflow from './images/workflow.png'
 
@@ -20,6 +22,7 @@ const BlogArticle = () => {
         <h2 id='article_title'>
           Create a full-stack web application using AWS Amplify
         </h2>
+        <p id='update'>Updated At: Wed,13/1/2021</p>
         <Photo
           src={amplify}
           name='amplify and react'
@@ -78,16 +81,24 @@ const BlogArticle = () => {
           <ul>
             <li>
               {' '}
-              <Link smooth to='/post/create-amplify-app/#archi'>ARCHITECTURE</Link>
+              <Link smooth to='/post/create-amplify-app/#archi'>
+                ARCHITECTURE
+              </Link>
             </li>
             <li>
-              <Link smooth to='/post/create-amplify-app/#workflow'>WORKFLOW USING AMPLIFY</Link>
+              <Link smooth to='/post/create-amplify-app/#workflow'>
+                WORKFLOW USING AMPLIFY
+              </Link>
             </li>
             <li>
-              <Link smooth to='/post/create-amplify-app/#visitor'>IMPLEMENT A VISITOR DASHBOARD</Link>
+              <Link smooth to='/post/create-amplify-app/#visitor'>
+                IMPLEMENT A VISITOR DASHBOARD
+              </Link>
             </li>
             <li>
-              <Link smooth to='/post/create-amplify-app/#cv'>PROCESS MY CV DYNAMICALLY</Link>
+              <Link smooth to='/post/create-amplify-app/#cv'>
+                PROCESS MY CV DYNAMICALLY
+              </Link>
             </li>
             <li>
               <Link smooth to='/post/create-amplify-app/#email'>
@@ -177,8 +188,8 @@ const BlogArticle = () => {
           Instead of putting my CV content statically in html, I put my CV in
           json file and format them in a organised way so that I could process
           and render the content dynamically using JSX. This way if I wish to
-          update my CV content in the future, I can add content directly to the json file without
-          worrying about HTML rendering of the content.{' '}
+          update my CV content in the future, I can add content directly to the
+          json file without worrying about HTML rendering of the content.{' '}
         </p>
         <h2 id='email'>IMPLEMENT EMAIL NOTIFICATION FOR CONTACT</h2>
         <p>
@@ -193,6 +204,25 @@ const BlogArticle = () => {
         </p>
         <Photo src={contact} name='ses code segment' />
         <Photo src={email} name='email' />
+        <h2 id='apiKey'>Rotate API Key for AppSync API</h2>
+        <p>
+          After a week of the successful deployment of my web application, I
+          encountered the following error for my welcome page:
+        </p>
+        <Photo src={apiErr} name='api error' />
+        <p>
+          As we know, error 401 stands for unthorized access for resources. The
+          authorization mechanism used for the AppSync API is API Key. You can
+          also use IAM Role or AWS Cognito pool for authorization in this case.
+          From what we have seen so far, we can almost be sure that something
+          wrong with the API Key. I went on to the AWS AppSync Console, and
+          discovered that my API Key was expired few days ago.
+        </p>
+        <p>
+          According to the official documentation from AWS, to handle API Key
+          expiration, you need to configure the following:{' '}
+        </p>
+        <Photo src={configure}  name='configure'/>
       </div>
     </div>
   )

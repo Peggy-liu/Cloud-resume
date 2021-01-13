@@ -4,9 +4,8 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Resume from "./Resume"
 import Welcome from "./Welcome"
 import Post from "./Post"
-import Gallery from "./Gallery"
 import Contact from './Contact'
-import Amplify, { API } from 'aws-amplify';
+import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import BlogArticle from './BlogArticle'
 
@@ -22,7 +21,6 @@ function App () {
       <Route path='/resume'  component={Resume} />
       <Route path='/post' exact component={Post} />
       <Route path='/post/create-amplify-app' component={BlogArticle} />
-      <Route path='/gallery'  component={Gallery} />
       <Route path='/contact'  component={Contact} />
       </Switch>
     </Router>
