@@ -31,12 +31,12 @@
         "GraphQLAPIEndpointOutput": "https://vwjrng74xbbq3ijyxikkj7fcaa.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-jzaxmq6bvfdcdjycbaxj3em5ke"
       },
-      "lastPushTimeStamp": "2021-01-11T06:05:31.603Z",
+      "lastPushTimeStamp": "2021-01-13T11:43:58.678Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apivisitorCount"
       },
-      "lastPushDirHash": "yE5XCADmR3p64exBRqGgFRp8G/Q="
+      "lastPushDirHash": "vgq471BbcR4DjUoGIMdgqfNM8go="
     },
     "SesApi": {
       "service": "API Gateway",
@@ -56,7 +56,7 @@
         "RootUrl": "https://xronsxbupa.execute-api.us-east-1.amazonaws.com/dev",
         "ApiId": "xronsxbupa"
       },
-      "lastPushTimeStamp": "2021-01-11T06:05:29.832Z",
+      "lastPushTimeStamp": "2021-01-13T11:43:58.683Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/api/SesApi-cloudformation-template.json",
         "logicalId": "apiSesApi"
@@ -76,15 +76,15 @@
         "Name": "sendEmail-dev",
         "LambdaExecutionRole": "cloudresumeLambdaRole7828df38-dev"
       },
-      "lastPushTimeStamp": "2021-01-11T06:05:29.835Z",
+      "lastPushTimeStamp": "2021-01-13T11:43:58.687Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-dev-15952-deployment/amplify-cfn-templates/function/sendEmail-cloudformation-template.json",
         "logicalId": "functionsendEmail"
       },
-      "lastBuildTimeStamp": "2020-12-30T13:57:19.020Z",
-      "lastPackageTimeStamp": "2020-12-30T13:57:19.043Z",
+      "lastBuildTimeStamp": "2021-01-13T06:05:44.815Z",
+      "lastPackageTimeStamp": "2021-01-13T06:05:44.839Z",
       "distZipFilename": "sendEmail-6645642b306d4e683141-build.zip",
-      "lastPushDirHash": "svE2clRIzVnL+S2A7asXuT1eBc0="
+      "lastPushDirHash": "Qacp7I63/MqmxuKT7Fdg/3G8DCY="
     }
   }
 }
