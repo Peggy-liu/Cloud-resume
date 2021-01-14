@@ -1,7 +1,12 @@
 {
-    "dev": {
-        "configLevel": "project",
-        "useProfile": false,
-        "awsConfigFilePath": "/Users/liupeiqi/.amplify/awscloudformation/32dkX6rdwu"
-    }
+  "main": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "default"
+  },
+  "dev": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "default"
+  }
 }

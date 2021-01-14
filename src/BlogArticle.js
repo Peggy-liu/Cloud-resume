@@ -9,6 +9,11 @@ import apiErr from './images/apiErr.png'
 import configure from './images/configure.png'
 import { HashLink as Link } from 'react-router-hash-link'
 import workflow from './images/workflow.png'
+import option1 from './images/option1.png'
+import option2 from './images/option2.png'
+import option4 from './images/option4.png'
+import option3 from './images/option3.png'
+import option5 from './images/option5.png'
 
 const BlogArticle = () => {
   return (
@@ -22,7 +27,7 @@ const BlogArticle = () => {
         <h2 id='article_title'>
           Create a full-stack web application using AWS Amplify
         </h2>
-        <p id='update'>Updated At: Wed,13/1/2021</p>
+        <p id='update'>Updated At: Fri,15/1/2021</p>
         <Photo
           src={amplify}
           name='amplify and react'
@@ -103,6 +108,16 @@ const BlogArticle = () => {
             <li>
               <Link smooth to='/post/create-amplify-app/#email'>
                 IMPLEMENT EMAIL NOTIFICATION FOR CONTACT
+              </Link>
+            </li>
+            <li>
+              <Link smooth to='/post/create-amplify-app/#token'>
+              “MISSING AUTHENTICATION TOKEN” — APIGATEWAY TROUBLESHOOTING
+              </Link>
+            </li>
+            <li>
+              <Link smooth to='/post/create-amplify-app/#apiKey'>
+              ROTATE API KEY FOR APPSYNC API
               </Link>
             </li>
           </ul>
@@ -204,7 +219,63 @@ const BlogArticle = () => {
         </p>
         <Photo src={contact} name='ses code segment' />
         <Photo src={email} name='email' />
-        <h2 id='apiKey'>Rotate API Key for AppSync API</h2>
+        <h2 id='token'>
+          “MISSING AUTHENTICATION TOKEN” — APIGATEWAY TROUBLESHOOTING
+        </h2>
+        <p>
+          When I tried to send a POST request to the gateway from the contact
+          form, I encountered error 401 that said "Missing Authentication
+          Token", which in the meanwhile gave me an error message in the console
+          indicating the response was blocked by the browser due to the missing
+          "Access-Control-Allow-Origin" header. This was a rather odd error, as
+          two errors seemed irrelevant. I googled this error message and turned
+          out there were lots of people encountered the same issue. Given lots
+          of suggestions online, I first confirmed there was no authentication
+          mechanism implemented on my API. Then, I went on experimenting with
+          most of the solutions. However, no luck was found in all of them. At
+          the end, I found the solution from the AWS offcial documentation
+          regarding "Enable CORS support for REST API".
+        </p>
+        <p>
+          CORS support has to be enabled since different domains are used in
+          this scenario (the website uses a custom domain name
+          "peggy-liu-cloud-space.com" and the API uses AWS-provided domain).
+          When the POST request is triggered by the application, a OPTIONS
+          request will be sent to the API first. The POST request will only be
+          sent when there is a "Access-Control-Allow-Origin" header presented
+          with 200 OK response. Based on the AWS documentation, the
+          implementation can be described as follows:
+          <p>
+            Step 1: create a 'OPTIONS' method under the resource that requires a
+            preflight request. In my case, it is the '/email' resource. Since
+            OPTIONS method only need to respond with required headers without
+            any backend support, Mock integration is adequate in this case.
+          </p>
+        </p>
+        <Photo src={option1} name='option1' />
+        <Photo src={option2} name='option2' />
+        <p>
+          Step 2: In the OPTIONS method, go to "Method Response" and set up
+          response headers for HTTP Status 200 as following:
+        </p>
+        <Photo src={option4} name='option4' />
+        <p>
+          Step 3: In the same OPTIONS method, go to "Integration Response", and
+          specify HTTP status regex and header mappings values.
+        </p>
+        <Photo src={option3} name='option3' />
+        <p>
+          Step 4: THIS IS A REALLY IMPORTANT STEP! DEPLOY API! DEPLOY API!
+          DEPLOY API!{' '}
+        </p>
+        <p>
+          Step 5: Make sure your actual CORS-enabled method also return a
+          "Access-Control-Allow-Origin" header in the response. In my case, it
+          is my POST method and I added this header in the serverless function
+          response.
+        </p>
+        <Photo src={option5} name='option5'/>
+        <h2 id='apiKey'>ROTATE API KEY FOR APPSYNC API</h2>
         <p>
           After a week of the successful deployment of my web application, I
           encountered the following error for my welcome page:
@@ -222,7 +293,7 @@ const BlogArticle = () => {
           According to the official documentation from AWS, to handle API Key
           expiration, you need to configure the following:{' '}
         </p>
-        <Photo src={configure}  name='configure'/>
+        <Photo src={configure} name='configure' />
       </div>
     </div>
   )
