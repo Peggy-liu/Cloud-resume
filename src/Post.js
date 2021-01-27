@@ -1,14 +1,20 @@
 import Theme from './Theme'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Post = () => {
   return (
-    <div id='post'>
-      <Theme
-        titleBoxStyle='post-title-box'
-        titleStyle='post-title'
-        titleValue='BLOG POST'
-      />
+    <div>
+      <motion.div
+        exit={{ opacity: 0 }}
+        className='bg-index grid justify-items-center grid-flow-row auto-rows-auto  h-screen w-screen z-0'
+      >
+        <Theme />
+        <div class='place-self-start px-4 md:px-10 md:py-16 '>
+          <p class='font-title text-2xl md:text-7xl'>Blog Post</p>
+        </div>
+        {/* <div id='post'>
+     
 
       <div id='post_cat'>
         <h2>Posts</h2>
@@ -20,6 +26,8 @@ const Post = () => {
           </li>
         </ul>
       </div>
+    </div> */}
+      </motion.div>
     </div>
   )
 }

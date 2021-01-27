@@ -1,85 +1,18 @@
-.welcome-page {
-  width: 1920px;
-  height: 1080px;
-  background: url('./images/pinkcloud.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-
-  overflow: hidden;
-}
-.welcome_title {
-  width: 990px;
-  position: relative;
-  top: 260px;
-  left: 465px;
-  font-size: 80px;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-}
-
-.visitor_dashboard {
-  width: 800px;
-  color: rgb(165, 214, 224);
-  position: relative;
-  top: 250px;
-  left: 695px;
-  font-family: 'Indie Flower', cursive;
-  font-weight: 700;
-  font-size: 40px;
-  opacity: 1;
-  
-}
 
 
-.main_nav {
-  opacity: 1;
-  width: 1664px;
-  height: 89px;
-  position: absolute;
-  left: 128px;
-  top: 840px;
-  max-width: 100%;
-  display: block;
-}
 
 .other_nav {
   opacity: 1;
   width: 1664px;
   height: 89px;
   position: absolute;
-  left: 128px;
-  top: 345px;
+  left: 70px;
+  top: 170px;
   display: block;
 }
 
-.nav_link {
-  background-color: transparent;
-  color: white;
-  opacity: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Rubik', sans-serif;
-  text-align: left;
-  font-size: 30px;
-  letter-spacing: 0;
-  list-style: none;
-}
 
-.link {
-  transition-duration: 0.4s;
-  border-color: transparent;
-  border-radius: 5px;
-  color: white;
-}
 
-.link:hover {
-  background-color: rgb(176, 191, 214);
-}
 
 #resume {
   overflow: auto;
@@ -89,7 +22,7 @@
   position: absolute;
   background-color: rgb(242, 234, 221);
 }
-#resume-title-box {
+/* #resume-title-box {
   opacity: 1;
   border: none;
   width: 1920px;
@@ -101,7 +34,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(./images/frame.jpg);
-}
+} */
 #resume-title {
   color: rgb(0, 0, 0);
   opacity: 1;
@@ -154,16 +87,6 @@
   margin: 12px;
   text-align: left;
 }
-
-#gallery {
-  overflow: auto;
-  opacity: 1;
-  width: 1920px;
-  height: 1080px;
-  position: absolute;
-  background-color: rgb(242, 234, 221);
-}
-
 
 
 .introBox {
@@ -351,9 +274,7 @@ a {
   color: white;
 }
 
-pre {
-  color: yellow;
-}
+
 
 .disclaimer {
   font-weight: bolder;
@@ -374,3 +295,18 @@ pre {
   color: rgb(22, 22, 133);
   display: inline;
 }
+
+.spinner{
+  animation: spin infinite 2s linear;
+  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

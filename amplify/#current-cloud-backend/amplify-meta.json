@@ -29,14 +29,14 @@
         },
         "GraphQLAPIIdOutput": "25m6ddmwljavplsd4fj6a2rmsi",
         "GraphQLAPIEndpointOutput": "https://4i2gmgbspzgbdny465ov7wkuoi.appsync-api.us-east-1.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-dxsnvdfe4jcobny4acxvg4slqy"
+        "GraphQLAPIKeyOutput": "da2-2eif2pdz45feng32nipo3sb37e"
       },
-      "lastPushTimeStamp": "2021-01-13T13:14:00.853Z",
+      "lastPushTimeStamp": "2021-01-26T13:08:09.149Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-main-32533-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apivisitorCount"
       },
-      "lastPushDirHash": "uqq+/ZAuM0uqZKmXEOacKM1abRo="
+      "lastPushDirHash": "pNHzdBv0omk7A0kFcmLP0HR5d0I="
     },
     "SesApi": {
       "service": "API Gateway",
@@ -56,12 +56,11 @@
         "RootUrl": "https://rl2e8bbrrf.execute-api.us-east-1.amazonaws.com/main",
         "ApiId": "rl2e8bbrrf"
       },
-      "lastPushTimeStamp": "2021-01-13T13:14:00.853Z",
+      "lastPushTimeStamp": "2021-01-26T13:08:07.635Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-main-32533-deployment/amplify-cfn-templates/api/SesApi-cloudformation-template.json",
         "logicalId": "apiSesApi"
-      },
-      "lastPushDirHash": "rnQomlnxQhIU7JNfeFXqRoD71kM="
+      }
     }
   },
   "function": {
@@ -76,15 +75,11 @@
         "Name": "sendEmail-main",
         "LambdaExecutionRole": "cloudresumeLambdaRole7828df38-main"
       },
-      "lastPushTimeStamp": "2021-01-13T13:14:00.853Z",
+      "lastPushTimeStamp": "2021-01-26T13:08:07.637Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudapp-main-32533-deployment/amplify-cfn-templates/function/sendEmail-cloudformation-template.json",
         "logicalId": "functionsendEmail"
-      },
-      "lastBuildTimeStamp": "2021-01-13T13:12:29.096Z",
-      "lastPackageTimeStamp": "2021-01-13T13:12:29.118Z",
-      "distZipFilename": "sendEmail-6645642b306d4e683141-build.zip",
-      "lastPushDirHash": "svLGM6liTyv8XTWj0KmllSjckVE="
+      }
     }
   }
 }

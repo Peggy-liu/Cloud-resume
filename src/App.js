@@ -1,29 +1,36 @@
 import React from 'react'
 import './App.css'
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Resume from "./Resume"
-import Welcome from "./Welcome"
-import Post from "./Post"
-import Contact from './Contact'
-import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
+import {
+  Switch,
+  Route,
+  useLocation
+} from 'react-router-dom'
+import Resume from './Resume'
+import Welcome from './Welcome'
+import Post from './Post'
 import BlogArticle from './BlogArticle'
+import Contact from './Contact'
+import Amplify from 'aws-amplify'
+import awsconfig from './aws-exports'
 
-Amplify.configure(awsconfig);
+import { AnimatePresence } from 'framer-motion'
+
+
+Amplify.configure(awsconfig)
 
 function App () {
-  
+  const location = useLocation()
 
   return (
-    <Router>
-      <Switch>
-      <Route path='/' exact  component={Welcome} />
-      <Route path='/resume'  component={Resume} />
-      <Route path='/post' exact component={Post} />
-      <Route path='/post/create-amplify-app' component={BlogArticle} />
-      <Route path='/contact'  component={Contact} />
+    <AnimatePresence  exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
+        <Route path='/' exact component={Welcome} />
+        <Route path='/resume' component={Resume} />
+        <Route path='/post' exact component={BlogArticle} />
+        <Route path='/post/create-amplify-app' component={BlogArticle} />
+        <Route path='/contact' component={Contact} />
       </Switch>
-    </Router>
+    </AnimatePresence>
   )
 }
 
