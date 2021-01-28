@@ -6,7 +6,6 @@ import { getVisitorCount } from './graphql/queries'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-
 Amplify.configure(awsconfig)
 
 function Welcome () {
@@ -39,35 +38,39 @@ function Welcome () {
     <div>
       <motion.div
         exit={{ opacity: 0 }}
-        className='bg-index flex flex-col items-center justify-center h-screen w-screen z-0'
+        className='bg-index flex flex-col items-center justify-center h-screen w-screen z-0 '
       >
         <InitialTransition />
 
-        <div class='bg-index self-start md:w-full md:h-10 '>
-          <p class='font-header text-xl text-orange md:text-4xl '>
+        <div class='bg-index self-start md:w-full my-5 pt-4 '>
+          <p class='font-header text-xl text-orange lg:text-2xl xl:text-4xl '>
             Peggy's Cloud Space
           </p>
         </div>
-        <div class=' md:flex md:flex-row hidden z-10 md:box-content md:h-2/3 md:w-5/6 md:rounded-4xl md:bg-yellow2'>
-          <div class='hidden md:block md:box-content md:h-2/5 md:w-1/4  md:m-32 md:px-16'>
-            <p class='hidden md:block md:text-8xl md:font-title '>Welcome</p>
-            <p class='hidden md:block md:text-8xl md:font-title md:tracking-wider md:text-center '>
+        <div class=' md:flex md:flex-row hidden md:h-2/3 md:w-5/6 xl:justify-end lg:justify-center  md:rounded-4xl md:bg-yellow2'>
+          <div class='md:flex md:flex-col hidden pt-20 lg:space-y-3'>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title '>
+              Welcome
+            </p>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:tracking-wider md:text-center '>
               To
             </p>
-            <p class='hidden md:block md:text-8xl md:font-title md:text-right'>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:text-right'>
               Peggy's
             </p>
-            <p class='hidden md:block md:text-8xl md:font-title md:text-left'>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:text-left'>
               Cloud{' '}
             </p>
-            <p class='hidden md:block md:text-8xl md:font-title md:text-right '>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl 2xl:text-8xl md:font-title md:text-right '>
               Space
             </p>
           </div>
-          <div class='hidden md:flex items-center justify-center md:box-content md:h-2/5 md:w-1/4 md:m-44 md:p-10'>
-            <p class='hidden md:block md:text-7xl md:font-subtitle animate-bounce'>
-              You are visitor # {visitors}
-            </p>
+          <div class='hidden md:flex items-center justify-center md:h-2/5 md:w-1/4 md:m-44 md:p-10  '>
+            <div>
+              <p class='hidden md:block md:text-5xl lg:text-5xl md:font-subtitle animate-bounce'>
+                You are visitor # {visitors}
+              </p>
+            </div>
           </div>
         </div>
         <div class='flex items-center justify-center z-10 box-content h-2/4 w-2/4 rounded-4xl bg-yellow2 md:hidden sm:block'>
@@ -78,8 +81,8 @@ function Welcome () {
           </p>
         </div>
 
-        <nav class='pt-10'>
-          <ul className='grid grid-rows-4 gap-2 text-lg md:grid-cols-4 md:gap-x-80 md:text-2xl'>
+        <nav class='pt-24'>
+          <ul className='grid grid-rows-4 gap-2 text-lg md:grid-cols-4  md:text-2xl md:gap-x-20 lg:gap-x-20 xl:gap-x-72'>
             <Link to='/'>
               <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
                 HOME
@@ -102,8 +105,6 @@ function Welcome () {
             </Link>
           </ul>
         </nav>
-
-        {/* <Nav type='welcome' /> */}
       </motion.div>
     </div>
   )
