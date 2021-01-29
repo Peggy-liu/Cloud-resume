@@ -12,26 +12,29 @@ const Contact = () => {
     <div>
       <motion.div
         exit={{ opacity: 0 }}
-        className='bg-index grid justify-items-center items-center grid-flow-row auto-rows-auto  h-screen w-screen z-0 '
+        className='bg-index grid grid-flow-row auto-rows-auto h-screen w-screen z-0 '
       >
         <Theme />
-        <div class='place-self-start px-4 md:px-10  '>
-          <p class='font-title text-2xl md:text-7xl'>Contact Me</p>
+        <div class='place-self-start px-10 '>
+          <p class='font-title text-3xl lg:text-5xl xl:text-7xl'>Contact Me</p>
         </div>
-        <div class='grid grid-cols-2 md:w-full md:h-full'>
-          <div class='md:pl-32 md:ml-32 md:rounded-4xl md:bg-yellow2 md:w-3/5 md:h-4/5 flex flex-col justify-center  shadow-2xl '>
-            <Info type='EMAIL' value='peggylau1994@gmail.com' />
-
-            <Info type='GITHUB' value='https://github.com/Peggy-liu' />
-
-            <Info
-              type='LINKEDIN'
-              value='https://www.linkedin.com/in/peiqi-peggy-liu-a788aa155'
-            />
+        <div class='grid grid-cols-2 gap-10 '>
+          <div class='ml-20 mb-32  md:rounded-4xl bg-yellow2 flex flex-col justify-start  shadow-2xl '>
+            <div>
+              <Info type='EMAIL' value='peggylau1994@gmail.com' />
+            </div>
+            <div>
+              <Info type='GITHUB' value='https://github.com/Peggy-liu' />
+            </div>
+            <div>
+              {' '}
+              <Info
+                type='LINKEDIN'
+                value='https://www.linkedin.com/in/peiqi-peggy-liu-a788aa155'
+              />
+            </div>
           </div>
-        
-            <ContactForm />
-          
+          <ContactForm />
         </div>
       </motion.div>
     </div>
@@ -41,19 +44,19 @@ const Contact = () => {
 const Info = props => {
   if (props.type === 'EMAIL') {
     return (
-      <div class='md:p-7'>
-        <MdEmail class='w-7 h-7' />
-        <h3 class='font-subtitle md:text-2xl'>{props.type}</h3>
-        <p class='font-content md:text-xl'>{props.value} </p>
+      <div class='p-7'>
+        <MdEmail class='w-5 h-6 xl:w-7 xl:h-7' />
+        <h3 class='font-subtitle xl:text-2xl lg:text-base'>{props.type}</h3>
+        <p class='font-content xl:text-xl lg:text-base'>{props.value} </p>
       </div>
     )
   }
   if (props.type === 'GITHUB') {
     return (
-      <div class='md:p-7'>
-        <FaGithub class='w-7 h-7' />
-        <h3 class='font-subtitle md:text-2xl'>{props.type}</h3>
-        <p class='font-content md:text-xl '>
+      <div class='p-7'>
+        <FaGithub class='w-5 h-6 xl:w-7 xl:h-7' />
+        <h3 class='font-subtitle xl:text-2xl lg:text-base'>{props.type}</h3>
+        <p class='font-content xl:text-xl lg:text-base'>
           <a href={props.value} class='text-black'>
             {props.value}{' '}
           </a>
@@ -63,10 +66,10 @@ const Info = props => {
   }
   if (props.type === 'LINKEDIN') {
     return (
-      <div class='md:p-7'>
-        <AiFillLinkedin class='w-7 h-7' />
-        <h3 class='font-subtitle md:text-2xl'>{props.type}</h3>
-        <p class='font-content md:text-xl'>
+      <div class='p-7'>
+        <AiFillLinkedin class='w-5 h-6 xl:w-7 xl:h-7' />
+        <h3 class='font-subtitle xl:text-2xl lg:text-base'>{props.type}</h3>
+        <p class='font-content xl:text-xl lg:text-base'>
           <a href={props.value} class='text-black'>
             {props.value}{' '}
           </a>
@@ -109,42 +112,49 @@ const ContactForm = () => {
       })
   }
   return (
-    <div className='contact-info'>
-      <h3 class='font-subtitle md:text-2xl inline'>LEAVE ME A MESSAGE </h3>
-      <FaPenSquare class='w-9 h-9 inline' />
-      <div class='grid grid-cols-2 gap-4 md:w-full '>
-        
-          <div class='col-span-2 md:col-span-1'>
-            <input
-              type='text'
-              name='name'
-              placeholder='Name'
-              required
-              onChange={event => setName(event.target.value)}
-              class='bg-index border-solid border-gray-400 border-2 p-3 md:text-xl w-full'
-            />
-          </div>
-          <div class='col-span-2 md:col-span-1 '>
-            <input
-              type='text'
-              name='contact'
-              placeholder='email/phone'
-              required
-              class='bg-index border-solid border-gray-400 border-2 p-3 md:text-xl w-full'
-              onChange={event => setContact(event.target.value)}
-            />
-          </div>
-          <div class='col-span-2'>
-          <textarea cols="30" rows="10" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full bg-index"
+    <div class='mr-12'>
+      <h3 class='font-subtitle lg:text-xl xl:text-2xl inline'>LEAVE ME A MESSAGE </h3>
+      <FaPenSquare class='w-5 h-5 xl:w-9 xl:h-9 inline' />
+      <div class='grid grid-cols-2 gap-3 w-full  '>
+        <div class='col-span-2 md:col-span-1'>
+          <input
+            type='text'
+            name='name'
+            placeholder='Name'
+            required
+            onChange={event => setName(event.target.value)}
+            class='bg-index border-solid border-gray-400 border-2 p-2 xl:text-xl lg:text-base text-base w-full'
+          />
+        </div>
+        <div class='col-span-2 md:col-span-1 '>
+          <input
+            type='text'
+            name='contact'
+            placeholder='email/phone'
+            required
+            class='bg-index border-solid border-gray-400 border-2 p-2 xl:text-xl lg:text-base text-base w-full'
+            onChange={event => setContact(event.target.value)}
+          />
+        </div>
+        <div class='col-span-2'>
+          <textarea
+            cols='30'
+            rows='10'
+            class='border-solid border-gray-400 border-2 p-2  bg-index xl:text-xl lg:text-base text-base w-full'
             placeholder='leave your message here, I will get back to you ASAP...'
             required
             onChange={event => setMessage(event.target.value)}
           />
-          </div>
-          <br />
-          <button type='button' onClick={handleSubmit} class='md:w-2/12 justify-self-end bg-green2 text-white font-subtitle text-xl' >Send</button>
-          <FaSpinner icon='spinner' className='spinner' style={display} />
-      
+        </div>
+        <br />
+        <button
+          type='button'
+          onClick={handleSubmit}
+          class='w-2/12 lg:w-3/12 justify-self-end bg-green2 text-white font-subtitle text-sm lg:text-lg xl:text-xl rounded-2xl'
+        >
+          Send
+        </button>
+        <FaSpinner icon='spinner' className='spinner' style={display} />
       </div>
     </div>
   )

@@ -20,7 +20,8 @@ exports.handler =  function (event, context, callback) {
     "statusCode": 204,
     "headers": {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': '*'
+      'Access-Control-Allow-Headers': '*',
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
     }
   }
   callback(null, response);

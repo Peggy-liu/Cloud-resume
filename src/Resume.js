@@ -27,7 +27,7 @@ function Resume () {
         <Theme />
 
         <div class='place-self-start px-4 md:px-10 md:py-16 '>
-          <p class='font-title text-2xl md:text-7xl'>Cloud Resume</p>
+          <p class='font-title text-3xl lg:text-5xl xl:text-7xl'>Cloud Resume</p>
         </div>
         <div class='place-self-end flex flex-row mx-16'>
           <AiOutlineFilePdf class='w-5 h-6 md:w-10 md:h-11' />

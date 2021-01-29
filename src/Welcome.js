@@ -49,25 +49,25 @@ function Welcome () {
         </div>
         <div class=' md:flex md:flex-row hidden md:h-2/3 md:w-5/6 xl:justify-end lg:justify-center  md:rounded-4xl md:bg-yellow2'>
           <div class='md:flex md:flex-col hidden pt-20 lg:space-y-3'>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title '>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title '>
               Welcome
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:tracking-wider md:text-center '>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:tracking-wider md:text-center '>
               To
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:text-right'>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:text-right'>
               Peggy's
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  2xl:text-8xl md:font-title md:text-left'>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:text-left'>
               Cloud{' '}
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl 2xl:text-8xl md:font-title md:text-right '>
+            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl xl:text-8xl md:font-title md:text-right '>
               Space
             </p>
           </div>
           <div class='hidden md:flex items-center justify-center md:h-2/5 md:w-1/4 md:m-44 md:p-10  '>
             <div>
-              <p class='hidden md:block md:text-5xl lg:text-5xl md:font-subtitle animate-bounce'>
+              <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl md:font-subtitle animate-bounce'>
                 You are visitor # {visitors}
               </p>
             </div>
