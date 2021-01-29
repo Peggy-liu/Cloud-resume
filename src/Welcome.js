@@ -35,10 +35,10 @@ function Welcome () {
   }
 
   return (
-    <div>
+    
       <motion.div
         exit={{ opacity: 0 }}
-        className='bg-index flex flex-col items-center justify-center h-screen w-screen z-0 '
+        className='bg-index flex flex-col items-center h-screen w-screen '
       >
         <InitialTransition />
 
@@ -47,21 +47,21 @@ function Welcome () {
             Peggy's Cloud Space
           </p>
         </div>
-        <div class=' md:flex md:flex-row hidden md:h-2/3 md:w-5/6 xl:justify-end lg:justify-center  md:rounded-4xl md:bg-yellow2'>
+        <div class=' md:flex md:flex-row hidden md:h-2/3 md:w-5/6 xl:justify-end lg:justify-center md:rounded-4xl md:bg-yellow2 '>
           <div class='md:flex md:flex-col hidden pt-20 lg:space-y-3'>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title '>
+            <p class='hidden md:block text-2xl md:text-4xl lg:text-5xl  xl:text-6xl 2xl:text-8xl font-title '>
               Welcome
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:tracking-wider md:text-center '>
+            <p class='hidden md:block text-2xl md:text-4xl lg:text-5xl  xl:text-6xl 2xl:text-8xl font-title md:tracking-wider md:text-center '>
               To
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:text-right'>
+            <p class='hidden md:block text-2xl md:text-4xl lg:text-5xl  xl:text-6xl 2xl:text-8xl md:font-title md:text-right'>
               Peggy's
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl  xl:text-8xl md:font-title md:text-left'>
+            <p class='hidden md:block text-2xl md:text-4xl lg:text-5xl  xl:text-6xl 2xl:text-8xl md:font-title md:text-left'>
               Cloud{' '}
             </p>
-            <p class='hidden md:block text-2xl md:text-5xl lg:text-6xl xl:text-8xl md:font-title md:text-right '>
+            <p class='hidden md:block text-2xl md:text-4xl lg:text-5xl  xl:text-6xl 2xl:text-8xl md:font-title md:text-right '>
               Space
             </p>
           </div>
@@ -80,33 +80,34 @@ function Welcome () {
             # <br /> {visitors}
           </p>
         </div>
-
-        <nav class='pt-24'>
-          <ul className='grid grid-rows-4 gap-2 text-lg md:grid-cols-4  md:text-2xl md:gap-x-20 lg:gap-x-20 xl:gap-x-72'>
-            <Link to='/'>
-              <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
-                HOME
-              </li>
-            </Link>
-            <Link to='/resume'>
-              <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
-                CLOUD RESUME
-              </li>
-            </Link>
-            <Link to='/post'>
-              <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
-                POST
-              </li>
-            </Link>
-            <Link to='/contact'>
-              <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
-                CONTACT ME
-              </li>
-            </Link>
-          </ul>
-        </nav>
+        <div class='mt-10'>
+          <nav>
+            <ul className='grid grid-rows-4 gap-2 text-lg md:grid-cols-4 md:text-2xl md:gap-x-20 lg:gap-x-20 xl:gap-x-64'>
+              <Link to='/'>
+                <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
+                  HOME
+                </li>
+              </Link>
+              <Link to='/resume'>
+                <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
+                  CLOUD RESUME
+                </li>
+              </Link>
+              <Link to='/post'>
+                <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
+                  POST
+                </li>
+              </Link>
+              <Link to='/contact'>
+                <li class='text-white rounded-lg border-opacity-0 hover:bg-orange font-subtitle text-center '>
+                  CONTACT ME
+                </li>
+              </Link>
+            </ul>
+          </nav>
+        </div>
       </motion.div>
-    </div>
+   
   )
 }
 
