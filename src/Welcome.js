@@ -35,10 +35,10 @@ function Welcome () {
   }
 
   return (
-    
+    <div>
       <motion.div
         exit={{ opacity: 0 }}
-        className='bg-index flex flex-col items-center h-screen w-screen '
+        className='bg-index flex flex-col items-center h-screen w-screen overflow-hidden'
       >
         <InitialTransition />
 
@@ -107,7 +107,7 @@ function Welcome () {
           </nav>
         </div>
       </motion.div>
-   
+    </div>
   )
 }
 
