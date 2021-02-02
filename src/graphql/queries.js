@@ -6,8 +6,6 @@ export const getVisitorCount = /* GraphQL */ `
     getVisitorCount(id: $id) {
       id
       count
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -21,8 +19,7 @@ export const listVisitorCounts = /* GraphQL */ `
       items {
         id
         count
-        createdAt
-        updatedAt
+      
       }
       nextToken
     }
