@@ -51,6 +51,9 @@
         ,
         {
             "CI/CD": "Understand the need and benefit of CI/CD, be able to achieve CI/CD through tools such as Jenkins."
+        },
+        {
+            "CLI and Shell Script": "Solid understanding about file structures on different operating systems and able to use CLI to interact with them. Able to write basic shell script to automate computing tasks such as for EC2 machines."
         }
     ],
     "project": "“Federated Autonomous Vehicle Testbed (Stage 2)” for Australia Department Of Defence And technology \n As a software developer for the team, using C++ and Unreal Engine blueprint to complete a project for Australia Department Of Defence And technology, named “Federated Autonomous Vehicle Testbed (Stage 2)”, which aimed to implement the simulated behaviour of an un-crewed jackal(AI controller) based on different scenarios. ",
