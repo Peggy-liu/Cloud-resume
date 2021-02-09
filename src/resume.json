@@ -4,13 +4,11 @@
     "skills": [
         {
             "Microservices": [
-                "Solid knowledge in creating microservices using Spring Boot, Spring Cloud Netflix",
-                "Spring security including JWT, OAuth2, OpenID, and Keycloak, with extra transport layer security SSL",
+                "Solid knowledge in creating microservices using Spring Boot, Spring Cloud Netflix regarding to Architecture, Design Pattern, Service Discovery, Configuration, Monitoring, Fault tolerance, Testing and Deployment.",
+                "Strong understanding of the Spring security architecture, and able to leverage it to create custom filters for application's needs. Able to implement application security using Spring security, with JWT, OAuth2, OpenID, and Keycloak, with extra transport layer security SSL. ",
                 "Testing: Unit testing and Integration testing in Java using Junit and Mockito.",
-                " Microservices using Spring Boot, Spring Cloud Netflix; Architecture, Design Pattern, Configuration, Monitoring, Fault tolerance, Testing and Deployment.",
                 "Basic knowledge about various Microservice design pattern; experience in buildling microservices with CQRS and event sourcing using Axon frameworks and RabbitMq.",
-                "Docker & Docker-Compose: Use of docker for application containerisation",
-                "Testing: Unit testing and Integration testing in Java using Junit and Mockito."
+                "Docker & Docker-Compose: Use of docker for application containerisation"
             ]
         },
         {
@@ -39,16 +37,20 @@
             "C++": "Basic knowledge for C++, have developed final year project in C++."
         },
         {
-            "Web Development": "React framework is used for the front-end of this web app; javascript is also used for the serverless function. The design of this web app uses HTML, CSS, with the help of tool such as Figma"
+            "Web Development": "React framework is used for the front-end of this web app; javascript is also used for the serverless function. The design of this web app uses TailwindCSS, with the help of tool such as Figma"
         },
         {
             "database": "Experience in using various database for backend architecture. Such as MySQL, Amazon DynamoDB, Amazon RDS and Neo4j. "
         },
         {
-            "ioT": "Experience in making a smart parking system prototype using Arduino, using NodeJS with Express framework to build a local web server. A MySQL database was used to store the data that received from the Arduino. A webpage is used to serve information from the database and from external APIs, such as Google API. "
+            "IoT": "Experience in making a smart parking system prototype using Arduino, using NodeJS with Express framework to build a local web server. A MySQL database was used to store the data that received from the Arduino. A webpage is used to serve information from the database and from external APIs, such as Google API. "
         },
         {
             "agile": "Consistently involved in Sprint in all project works at school throughout my study."
+        }
+        ,
+        {
+            "CI/CD": "Understand the need and benefit of CI/CD, be able to achieve CI/CD through tools such as Jenkins."
         }
     ],
     "project": "“Federated Autonomous Vehicle Testbed (Stage 2)” for Australia Department Of Defence And technology \n As a software developer for the team, using C++ and Unreal Engine blueprint to complete a project for Australia Department Of Defence And technology, named “Federated Autonomous Vehicle Testbed (Stage 2)”, which aimed to implement the simulated behaviour of an un-crewed jackal(AI controller) based on different scenarios. ",
@@ -70,6 +72,9 @@
         },
         {
             "Team Construction": "An enthusiastic team member, hate being left behind by the team. Involve in group discussion all the time(no matter what the content is). Consistent update on the work to the team, asking for group opinions. Team goal is the top priority. Last but not least, I welcome any kind of advises and comments to help me figure out the space for improvement. I also love a challenging and innovative environment which keeps me thinking and working hard. "
+        },
+        {
+            "ME": "Food and wine lover. Gym enthusiast. Fashionista. And I love puppies. "
         }
     ]
 }
